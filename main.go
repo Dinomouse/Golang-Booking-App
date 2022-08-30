@@ -23,22 +23,22 @@ func main() {
 		if isValidName && isValidEmail && isValidTicketNumber {
 			bookTicket(userTickets, firstName, lastName, email)
 			firstNames := getFirstNames()
-			fmt.Printf("These first names of bookings are: %v\n", firstNames)
+			fmt.Printf("The first names of bookings are: %v\n", firstNames)
 
 			if remainingTickets == 0 {
 				//end program
-				fmt.Println("Our conference is booked out. Come back next year.")
+				fmt.Println("Our conference is booked out. Come back next year")
 				break
 			}
 		} else {
 			if !isValidEmail {
-				fmt.Println("First name or Last name is too short")
+				fmt.Println("First name or last name is too short")
 			}
 			if !isValidEmail {
-				fmt.Println("This is not a valid email address.")
+				fmt.Println("This is not a valid email address")
 			}
 			if !isValidTicketNumber {
-				fmt.Println("Number of tickets you have entered is invalid")
+				fmt.Println("The number of tickets you have entered is invalid")
 			}
 
 		}
@@ -48,7 +48,7 @@ func main() {
 
 func greetUsers() {
 	fmt.Printf("Welcome to %v booking application\n", conferenceName)
-	fmt.Printf("We have total of %v tickets and %v are still available.\n", conferenceTickets, remainingTickets)
+	fmt.Printf("We have total of %v tickets and %v are still available\n", conferenceTickets, remainingTickets)
 	fmt.Println("Get your tickets here to attend")
 
 }
